@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BirdScript : MonoBehaviour
@@ -13,6 +15,11 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("space") == false)
+        {
+            myRigidbody.velocity = Vector2.up * 10;
+        }
+
+
     }
 }
