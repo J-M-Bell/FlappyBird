@@ -25,7 +25,7 @@ public class BirdScript : MonoBehaviour
         // If it is, apply an upward force to the bird's Rigidbody2D
         if (Input.GetKeyDown(KeyCode.Space) == true)
         {
-            myRigidbody.velocity = Vector2.up * flapStrength;
+            myRigidbody.linearVelocity = Vector2.up * flapStrength;
         }
 
 
